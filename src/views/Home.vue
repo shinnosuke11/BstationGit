@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <h1 class="catch">バイトでつくるコミュニティ</h1>
-    <SHUFFLE></SHUFFLE>
+    <Slider></Slider>
 
 
  <div id="pagebody">
@@ -70,7 +70,7 @@
 	</ul>
 </div>
 
-   <shopabout></shopabout>
+   <JobList></JobList>
    
 </div>
 </div>
@@ -78,13 +78,13 @@
 
 <script>
 // @ is an alias to /src
-import shopabout from   "../components/shopabout.vue" ;
-import SHUFFLE from "../components/SHUFFLE.vue";
+import JobList from   "../components/JobList.vue" ;
+import Slider from "../components/Slider.vue";
 export default {
   name: 'Home',
   components: {
-    shopabout,
-    SHUFFLE,
+    JobList,
+    Slider,
   }
 }
 </script>
@@ -93,8 +93,8 @@ export default {
 
 div#pagebody {
 	width:52%;
-	margin: auto;	/*内容全体をセンタリング*/
-	background-color:#a7a7a700;		/*内容全体の背景色*/ 
+	margin-left: 22%;
+	background-color:#2b2b2b00;		/*内容全体の背景色*/ 
 }
 
 
@@ -107,29 +107,27 @@ height:3%;
 color:rgb(156, 156, 156);
 border-radius:1px;
 background:rgb(192, 192, 192);
-font-size:19px;
-margin-left: -450px;
-padding-left: 20px;
+font-size:1.2em;
+margin-left: -23em;
+padding-left: 1em;
 
 }
 #sbtn5{
 width:5%;
 height:3%;
-margin-left: 0px;
-margin-top: -1px;
+margin-left: 0;
 border-radius:1px;
 background:#ffffff;
 color:rgb(39, 39, 39);
 font-weight:bold;
-font-size:19px;
+font-size:1.2em;
 border:none;
 padding: 0.35%;
 }
 #sbtn5:hover{
 background:rgb(255, 255, 255);
 color:#ff5c5c;
-font-size: 20px;
-
+font-size: 1.2em;
 }
 
 
@@ -139,8 +137,8 @@ font-size: 20px;
 ============================================*/
 div#submenu  {
 	width:20%;			
-	margin-top: 10px;
-	margin-left: 0px;
+	margin-top: 1em;
+	margin-left: 0;
 	display:inline;			
 	float:left;			
 }
@@ -148,8 +146,9 @@ div#submenu  {
 /*サブメニューのヘッダ部分（余白調整・背景画像・背景色・文字サイズなど）*/
 div#submenu_header {
 	height:2.6%; 
-	padding:4px 0px 0px 0px;
-	background-repeat:no-repeat; background-position:top;
+	padding:0.5em 0 0 0;
+	background-repeat:no-repeat; 
+	background-position:top;
 	background-color:#424242;
 	font-size:90%;
 	font-weight:bold;
@@ -159,7 +158,7 @@ div#submenu_header {
 
 /*サブメニューのボディ部分（余白調整・背景画像・背景色）*/
 ul#submenu_body {
-	padding-bottom:6px;
+	padding-bottom:1em;
 	background-repeat:no-repeat; 
 	background-position:bottom;
 	background-color:#474747;
@@ -173,12 +172,12 @@ ul#submenu_body li {
 ul#submenu_body li a {
 	display:block;	
 	border: solid 1px #474747;	
-	margin:0px 4px 0px 4px;		
-	padding:2px 0px 2px 2px;	
+	margin:0 0.3em 0 0.3em;		
+	padding:0.2em 0 0.2em 0.2em;	
 	background-color:#ffffff;
 	color: #474747;
 	text-decoration:none;		
-	padding-left: 50px;
+	text-align: center;
 }
 ul#submenu_body li a:hover {
 	background-color:#474747;	
@@ -186,6 +185,217 @@ ul#submenu_body li a:hover {
 
 
 
+/* ↓↓↓↓↓↓↓↓↓以下ノートパソコン用↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+/* ↓↓↓↓↓↓↓↓↓以下ノートパソコン用↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+/* ↓↓↓↓↓↓↓↓↓以下ノートパソコン用↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+/* ↓↓↓↓↓↓↓↓↓以下ノートパソコン用↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+ @media(max-width:1280px){
 
 
+
+
+div#pagebody {
+	width:100%;
+	margin-left: 24%;
+	background-color:#ffffffcc;		/*内容全体の背景色*/ 
+}
+
+
+
+	
+
+#sbox5{	
+width:20%;
+height:3%;
+color:rgb(156, 156, 156);
+border-radius:1px;
+background:rgb(192, 192, 192);
+font-size:0.9em;
+margin-left: -23em;
+padding-left: 1em;
+
+}
+#sbtn5{
+width:5%;
+height:3%;
+margin-left: 0;
+border-radius:1px;
+background:#ffffff;
+color:rgb(39, 39, 39);
+font-weight:bold;
+font-size:0.9em;
+border:none;
+padding: 0.35%;
+}
+
+#sbtn5:hover{
+background:rgb(255, 255, 255);
+color:#ff5c5c7c;
+font-size: 1.2em;
+}
+
+
+
+/*============================================
+サブメニュー（左カラム）
+============================================*/
+div#submenu  {
+	width:10%;			
+	margin-top: 1em;	
+	margin-left: 0;		
+}
+
+/*サブメニューのヘッダ部分（余白調整・背景画像・背景色・文字サイズなど）*/
+div#submenu_header {
+	height:2.6%; 
+	padding:0.5em 0 0 0;
+	background-repeat:no-repeat; 
+	background-position:top;
+	background-color:#424242;
+	font-size:80%;
+	font-weight:bold;
+	text-align:center;
+	color: #ffffff;
+}
+
+/*サブメニューのボディ部分（余白調整・背景画像・背景色）*/
+ul#submenu_body {
+	padding-bottom:1em;
+	background-repeat:no-repeat; 
+	background-position:bottom;
+	background-color:#474747;
+}
+ul#submenu_body li {
+	font-size:80%;		
+	list-style-type:none;	
+	display:inline;			
+	text-align: left;
+}
+ul#submenu_body li a {
+	display:block;	
+	border: solid 1px #474747;	
+	margin:0 0.3em 0 0.3em;		
+	padding:0.2em 0 0.2em 0.2em;	
+	background-color:#ffffff;
+	color: #474747;
+	text-decoration:none;		
+	text-align: center;
+}
+ul#submenu_body li a:hover {
+	background-color:#474747;	
+	color: #ffffff;}
+
+
+
+ }
+
+
+
+
+
+/* ↓↓↓↓↓↓↓↓↓以下タブレット用↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+/* ↓↓↓↓↓↓↓↓↓以下タブレット用↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+/* ↓↓↓↓↓↓↓↓↓以下タブレット用↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+/* ↓↓↓↓↓↓↓↓↓以下タブレット用↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+
+ @media(max-width:768px){
+
+
+
+
+div#pagebody {
+	width:100%;
+	margin-left: 4%;
+	background-color:#ffffffcc;		/*内容全体の背景色*/ 
+}
+
+
+
+	
+
+#sbox5{	
+width:45%;
+height:3%;
+color:rgb(156, 156, 156);
+border-radius:1px;
+background:rgb(192, 192, 192);
+font-size:0.9em;
+margin-left: -23em;
+padding-left: 1em;
+
+}
+#sbtn5{
+width:5%;
+height:3%;
+margin-left: 0;
+border-radius:1px;
+background:#ffffff;
+color:rgb(39, 39, 39);
+font-weight:bold;
+font-size:0.9em;
+border:none;
+padding: 0.35%;
+}
+
+#sbtn5:hover{
+background:rgb(255, 255, 255);
+color:#ff5c5c7c;
+font-size: 1.2em;
+}
+
+
+
+/*============================================
+サブメニュー（左カラム）
+============================================*/
+div#submenu  {
+	width:20%;			
+	margin-top: 1em;	
+	margin-left: 0em;		
+}
+
+/*サブメニューのヘッダ部分（余白調整・背景画像・背景色・文字サイズなど）*/
+div#submenu_header {
+	height:2.6%; 
+	padding:0.5em 0 0 0;
+	background-repeat:no-repeat; 
+	background-position:top;
+	background-color:#424242;
+	font-size:90%;
+	font-weight:bold;
+	text-align:center;
+	color: #ffffff;
+}
+
+/*サブメニューのボディ部分（余白調整・背景画像・背景色）*/
+ul#submenu_body {
+	padding-bottom:1em;
+	background-repeat:no-repeat; 
+	background-position:bottom;
+	background-color:#474747;
+}
+ul#submenu_body li {
+	font-size:100%;		
+	list-style-type:none;	
+	display:inline;			
+	text-align: left;
+	font-size: 90%;
+}
+ul#submenu_body li a {
+	display:block;	
+	border: solid 1px #474747;	
+	margin:0 0.3em 0 0.3em;		
+	padding:0.2em 0 0.2em 0.2em;	
+	background-color:#ffffff;
+	color: #474747;
+	text-decoration:none;		
+	text-align: center;
+}
+ul#submenu_body li a:hover {
+	background-color:#474747;	
+	color: #ffffff;}
+
+
+
+ }
 </style>

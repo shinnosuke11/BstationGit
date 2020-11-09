@@ -1,12 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import chat from '../views/chat.vue' //ここでviewを指定//
-import help from '../views/help.vue' 
-import favorite from '../views/favorite.vue' 
-import favoriteSHUFFLE from '../components/favoriteSHUFFLE.vue' 
-import mypage from '../views/mypage.vue' 
-import shopdetail from '../views/shopdetail.vue' 
+import Chat from '../views/Chat.vue' //ここでviewを指定//
+import Help from '../views/Help.vue' 
+import Likes from '../views/Likes.vue' 
+import LikesSlider from '../components/LikesSlider.vue' 
+import MyPage from '../views/MyPage.vue' 
+import ShopAbout from '../views/ShopAbout.vue' 
 Vue.use(VueRouter)
 
   const routes = [
@@ -24,34 +24,34 @@ Vue.use(VueRouter)
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
-    path: '/chat', ///ここでアドレスを定義する//
-    name: 'chat',
-    component: chat
+    path: '/Chat', ///ここでアドレスを定義する//
+    name: 'Chat',
+    component: Chat
   },
   {
-    path: '/mypage', ///ここでアドレスを定義する//
-    name: 'mypage',
-    component: mypage
+    path: '/MyPage', ///ここでアドレスを定義する//
+    name: 'MyPage',
+    component: MyPage
   },
   {
-    path: '/favorite', ///ここでアドレスを定義する//
-    name: 'favorite',
-    component: favorite
+    path: '/likes', ///ここでアドレスを定義する//
+    name: 'Likes',
+    component: Likes
   },
   {
     path: '/help', ///ここでアドレスを定義する//
-    name: 'help',
-    component: help
+    name: 'Help',
+    component: Help
   },
   {
-    path: '/shopdetail', ///ここでアドレスを定義する//
-    name: 'shopdetail',
-    component: shopdetail
+    path: '/ShopAbout', ///ここでアドレスを定義する//
+    name: 'ShopAbout',
+    component: ShopAbout
   },
   {
-    path: '/favoriteSHUFFLE', ///ここでアドレスを定義する//
-    name: 'favoriteSHUFFLE',
-    component: favoriteSHUFFLE
+    path: '/LikesSlider', ///ここでアドレスを定義する//
+    name: 'LikesSlider',
+    component: LikesSlider
   },
 ]
 
